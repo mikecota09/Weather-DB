@@ -5,10 +5,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
 </head>
 
 <body>
+    <div class="">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <h4 class="pt-1">Search for a City:</h4>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="search-city" aria-label="City Search"
+                        aria-describedby="search-button">
+                    <div class="input-group-append">
+                        <button class="" id="search-button"></button>
+                    </div>
+                </div>
+                <!-- Clear Search History -->
+                <button class="" type="button" id="clear-history">Clear history</button>
+                <ul class="list-group">
+
+                </ul>
+            </div>
+            <div class="">
+                <div class="">
+                    <div class="" id="current-weather">
+                        <h3 class="city-name" id="current-city"></h3>
+                        <p>Temperature:<span class="current" id="temperature"></span></p>
+                        <p>Humidity:<span class="current" id="humidity"></span></p>
+                        <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                        <p>UV index:<span class="current" id="uv-index"></span></p>
+                    </div>
+                </div>
+                <div class="col-sm-12" id="future-weather">
+                    <h3>5-Day Forecast:</h3>
+                    <div class="row">
+                        <div class="">
+                            <p id="fDate0"></p>
+                            <p id="fImg0"></p>
+                            <p>Temp:<span id="fTemp0"></span></p>
+                            <p>Humidity:<span id="fHumidity0"></span></p>
+                        </div>
+                        <div class="">
+                            <p id="fDate1"></p>
+                            <p id="fImg1"></p>
+                            <p>Temp:<span id="fTemp1"></span></p>
+                            <p>Humidity:<span id="fHumidity1"></span></p>
+                        </div>
+                        <div class="">
+                            <p id="fDate2"></p>
+                            <p id="fImg2"></p>
+                            <p>Temp:<span id="fTemp2"></span></p>
+                            <p>Humidity:<span id="fHumidity2"></span></p>
+                        </div>
+                        <div class="">
+                            <p id="fDate3"></p>
+                            <p id="fImg3"></p>
+                            <p>Temp:<span id="fTemp3"></span></p>
+                            <p>Humidity:<span id="fHumidity3"></span></p>
+                        </div>
+                        <div class="">
+                            <p id="fDate4"></p>
+                            <p id="fImg4"></p>
+                            <p>Temp:<span id="fTemp4"></span></p>
+                            <p>Humidity:<span id="fHumidity4"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="">
+        Weather Dashboard &copy 2022
+        <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        Made <i class="icon ion-heart"></i> By
+        <a href="https://github.com/mikecota09" target="blank">
+            Michael Cota</a>
+    </footer>
+
+    <script src="./assets/script.js"></script>
 
 </body>
 
